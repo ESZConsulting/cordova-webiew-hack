@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.eszconsulting.plugins.esz-uiwebview-hack"
+        version="0.1">
+
+    <name>UIWebView Hack</name>
+
+    <description>
+        A workaround for an iOS bug whereby WebActionDisablingCALayerDelegate attempts to call functions that don't exist on it
+    </description>
+
+    <author>pz / ESZ Consulting</author>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+        <engine name="cordova" version="<4.0.0" />
+    </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <!-- the controller loading the hack -->
+        <header-file src="src/ios/HackMainViewController.h"/>
+        <source-file src="src/ios/HackMainViewController.m"/>
+
+        <!-- the class which swaps in the hacked controller -->
+        <header-file src="src/ios/AppDelegate+UIWebViewHack.h"/>
+        <source-file src="src/ios/AppDelegate+UIWebViewHack.m"/>
+
+    </platform>
+
+</plugin>
