@@ -1,0 +1,19 @@
+{
+    "version": "0.1",
+    "name": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
+    "cordova_name": "UIWebView Hack",
+    "description": "A workaround for an iOS bug whereby WebActionDisablingCALayerDelegate attempts to call functions that don't exist on it",
+    "license": "MIT",
+    "repo": "https://github.com/ESZConsulting/cordova-webiew-hack.git",
+    "issue": "https://github.com/ESZConsulting/cordova-webiew-hack/issues",
+    "keywords": [],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}
