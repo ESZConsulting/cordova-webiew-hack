@@ -1,5 +1,5 @@
 {
-    "version": "0.1",
+    "version": "0.1.1",
     "name": "com.bunkerpalace.cordova.YoutubeVideoPlayer",
     "cordova_name": "UIWebView Hack",
     "description": "A workaround for an iOS bug whereby WebActionDisablingCALayerDelegate attempts to call functions that don't exist on it",
