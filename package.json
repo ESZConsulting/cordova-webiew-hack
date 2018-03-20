@@ -1,8 +1,8 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "name": "com.eszconsulting.plugins.esz-uiwebview-hack",
     "cordova_name": "UIWebView Hack",
-    "description": "A workaround for an iOS bug whereby WebActionDisablingCALayerDelegate attempts to call functions that don't exist on it",
+    "description": "Some iOS start up tweaks",
     "license": "MIT",
     "repo": "https://github.com/ESZConsulting/cordova-webiew-hack.git",
     "issue": "https://github.com/ESZConsulting/cordova-webiew-hack/issues",

@@ -1,10 +1,10 @@
 #import <objc/runtime.h>
 #import "AppDelegate.h"
-#import "HackMainViewController.h"
+#import "WebStartMainViewController.h"
 
 static void swizzleMethod(Class class, SEL destinationSelector, SEL sourceSelector);
 
-@implementation AppDelegate (UIWebViewHack)
+@implementation AppDelegate (WebStart)
 
 + (void)load {
     swizzleMethod([AppDelegate class],
@@ -16,7 +16,7 @@ static void swizzleMethod(Class class, SEL destinationSelector, SEL sourceSelect
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     self.window = [[UIWindow alloc] initWithFrame:screenBounds];
     self.window.autoresizesSubviews = YES;
-    HackMainViewController *mvc = [[HackMainViewController alloc] init];
+    WebStartMainViewController *mvc = [[WebStartMainViewController alloc] init];
     self.viewController = mvc;
     self.window.rootViewController = mvc;
     [self.window makeKeyAndVisible];

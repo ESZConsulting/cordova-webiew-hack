@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.eszconsulting.plugins.esz-uiwebview-hack"
-        version="0.2.0">
+        version="0.3.0">
 
-    <name>UIWebView Hack</name>
+    <name>WebStart</name>
 
     <description>
-        A workaround for an iOS bug whereby WebActionDisablingCALayerDelegate attempts to call functions that don't exist on it
+        A few start-up tweaks for iOS
     </description>
 
     <author>pz / ESZ Consulting</author>
@@ -21,12 +21,12 @@
     <platform name="ios">
 
         <!-- the controller loading the hack -->
-        <header-file src="src/ios/HackMainViewController.h"/>
-        <source-file src="src/ios/HackMainViewController.m"/>
+        <header-file src="src/ios/WebStartMainViewController.h"/>
+        <source-file src="src/ios/WebStartMainViewController.m"/>
 
         <!-- the class which swaps in the hacked controller -->
-        <header-file src="src/ios/AppDelegate+UIWebViewHack.h"/>
-        <source-file src="src/ios/AppDelegate+UIWebViewHack.m"/>
+        <header-file src="src/ios/AppDelegate+WebStart.h"/>
+        <source-file src="src/ios/AppDelegate+WebStart.m"/>
 
     </platform>
 
